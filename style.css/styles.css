@@ -56,15 +56,29 @@ img {
 .page-header .container {
   display: flex;
   justify-content: space-between;
-  flex-direction: row;
+  align-items: center;
 }
+.container .navigation {
+  display: flex;
+}
+.navigation .nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.container .socials {
+  display: flex;
+}
+/* #region Logo */
 .page-header .nav-logo {
+  display: flex;
   font-weight: 700;
   font-size: 18px;
   line-height: 1.11111;
   letter-spacing: -0.03em;
   text-transform: uppercase;
   color: #111;
+  margin-right: 365px;
 }
 .nav-logo:hover,
 .nav-logo:focus {
@@ -73,21 +87,17 @@ img {
 .logo-simply {
   font-style: italic;
 }
-.navigation ul a {
+/* #endregion Logo */
+.nav-menu .menu-item {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14286;
   letter-spacing: -0.02em;
   color: #111;
 }
-.navigation ul a:hover,
-.navigation ul a:focus {
+.nav-menu .menu-item:hover,
+.nav-menu .menu-item:focus {
   color: #fd9222;
-}
-.social-link {
-  border: 1px solid rgba(17, 17, 17, 0.1);
-  border-radius: 10px;
-  padding: 8px;
 }
 /* #endregion Header */
 /* #region Hero */
